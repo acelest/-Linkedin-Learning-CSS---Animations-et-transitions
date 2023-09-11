@@ -3,28 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Qu'est ce qu'une transition</title>
+    <title>Comprendre les transitions</title>
     <style>
       body {
         padding: 100px;
-        background-color: darksalmon;
+        background: #244436;
       }
       section {
         height: 300px;
         width: 300px;
-        background-color: indigo;
         color: #fff;
-        font-size: 2em;
+        font-size: 3em;
         display: table-cell;
         text-align: center;
         vertical-align: middle;
-        border: solid 6px #0bb14b;
+        border: solid 6px #c68335;
 
+        /* Animation proprietes */
         border-radius: 50%;
-        transition: 2ms;
       }
+
+      /* Ma transition */
       section:hover {
-        border-radius: 48%;
+        border-radius: 15px;
+        transition-duration: 400ms;
+        transition-timing-function: ease-in;
       }
     </style>
   </head>
