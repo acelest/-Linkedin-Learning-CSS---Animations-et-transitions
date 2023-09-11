@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprendre les transitions</title>
+    <style>
+      body {
+        padding: 100px;
+        background-color: #24436e;
+      }
+      section {
+        height: 300px;
+        width: 300px;
+        background-color: #8c57ac;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2em;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        border: solid 6px #42f779;
+        box-shadow: 0px 0px 30px 4px #0e9fc3;
+
+        border-radius: 50%;
+
+        /* transition */
+        transition: 2s;
+        transition-property: color;
+        transition-delay: 1ms;
+      }
+
+      section:hover {
+        border-radius: 15px;
+        border-color: #addd16;
+        color: rgb(23, 29, 188);
+      }
+    </style>
+  </head>
+  <body>
+    <section><p>Animez-moi</p></section>
+  </body>
+</html>
