@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Comprendre les Transformations - Rotate</title>
+    <style>
+      body {
+        padding: 100px;
+        background: #24436e;
+        perspective: 1000px;
+      }
+      div.wrapper {
+        width: 300px;
+        margin: 0 auto;
+        perspective: 1000px;
+      }
+      div.text {
+        color: #fff;
+      }
+      section {
+        box-sizing: border-box;
+        height: 200px;
+        width: 300px;
+        background: #000000;
+        color: #fff;
+        font-size: 2em;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        border: solid 6px #a25906;
+        border-radius: 15px;
+        transition: 100ms;
+        transition-timing-function: ease-in;
+        transition-property: background-color, transform;
+      }
+      section:hover {
+        transform: translateZ(-100px);
+        border-radius: 10%;
+        /* transform: translateZ(-200px); */
+      }
+      html button {
+        transition: 1s;
+        font-size: 200px;
+        border: 2px solid rgb(194, 0, 0);
+        background-color: rgb(219, 130, 130);
+      }
+      button:hover {
+        transform: translateZ() (100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <p>Animez-moi</p>
+      </section>
+    </div>
+    <button value="90">Submit</button>
+    <div class="text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sit
+        consectetur rem veniam eveniet? Repellat explicabo qui animi eaque esse,
+        tempora aliquam odit eos, laudantium, earum obcaecati distinctio dicta
+        impedit?
+      </p>
+      <p>
+        A quos repellendus autem molestiae esse voluptatum distinctio facere
+        ducimus in nam saepe harum temporibus nisi quidem, vero delectus
+        doloribus voluptatibus? Aut culpa voluptates dolore eos placeat vitae
+        dolorum recusandae.
+      </p>
+      <p>
+        Necessitatibus fuga quos hic itaque perferendis, pariatur doloremque
+        atque fugit ipsum quasi. Suscipit maiores, deleniti id optio aliquid
+        tenetur quo quia, voluptatem, hic placeat, est. Iure nam porro modi
+        laudantium.
+      </p>
+      <p>
+        Quas delectus, neque quibusdam assumenda labore incidunt debitis
+        voluptatum a vero dicta, voluptatem odio quod eveniet. Sed modi
+        consequatur nobis veniam iste voluptas eum dolorum debitis nemo,
+        deserunt sapiente quasi.
+      </p>
+      <p>
+        Sequi enim culpa voluptate in, quam, cupiditate aspernatur! Animi iure
+        nesciunt nulla blanditiis odio tempora consequatur ad perferendis qui,
+        quidem possimus rerum aliquam illum voluptates optio aut! Aperiam, iure,
+        repellat.
+      </p>
+    </div>
+  </body>
+</html>
