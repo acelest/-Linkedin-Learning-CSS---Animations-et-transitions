@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decouvir les proprietes des animations</title>
     <style>
-      /* body {
-        padding: 400px;
-        background-color: blue;
-      } */
+      p {
+        font-size: 60px;
+      }
       section {
         height: 300px;
         width: 300px;
@@ -21,22 +20,26 @@
         border: 2px solid #c68335;
         border-radius: 50%;
         animation-name: slide;
-        animation-duration: 2000ms;
+        animation-duration: 1s;
       }
 
       /* keyframe image cle */
       @keyframes slide {
-        from {
-          transform: translateX(0);
+        0% {
+          transform: translateX(0) rotate(0);
         }
-        to {
-          margin: 1000px;
-          transform: translateX(800px);
+        20% {
+          transform: translateX(500px) rotate(-1turn) skew(2);
+          background-color: brown;
+        }
+        100% {
+          transform: translateX(-800px);
+          background-color: rgb(73, 67, 66);
         }
       }
     </style>
   </head>
   <body>
-    <section><p>Bonjour !</p></section>
+    <section><p>Hello !</p></section>
   </body>
 </html>
