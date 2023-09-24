@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide - Animation</title>
+    <style>
+      body {
+        padding: 50px;
+        background-color: aquamarine;
+      }
+      section {
+        background-color: rgb(11, 92, 154);
+        height: 200px;
+        width: 300px;
+        color: white;
+        font-size: 2em;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        border: solid 6px rgb(80, 77, 77);
+        /* border-radius: 50%; */
+        animation-duration: 100ms;
+        /* animation-timing-function: linear; */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        /* animation-iteration-count: 1; */
+        box-sizing: content-box;
+      }
+      p {
+        margin: 10px;
+      }
+      @keyframes fadeIn {
+        0% {
+          transform: translateY(10px);
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section><p>Hello Aubin !</p></section>
+  </body>
+</html>
