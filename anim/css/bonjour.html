@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations 3D</title>
+    <style media="screen">
+      /* @import url("https://www.googleapis.com/css?family=Gloria+Hallelujah"); */
+      body {
+        padding: 100px;
+        background: #24436e;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #8c57ac;
+        font-size: 5em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+      }
+      h1 span:nth-child(even) {
+        color: #c68335;
+      }
+      h1 span {
+        display: inline-block;
+        background: #2c2d2e;
+        animation-name: rotateInPlace;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      h1 span:nth-child(2):hover {
+        color: aqua;
+      }
+      h1 span:nth-child(3) {
+        color: red;
+      }
+      h1 span:nth-child(4) {
+        color: rgb(36, 184, 10);
+      }
+      h1 span:nth-child(5) {
+        color: rgb(223, 179, 2);
+      }
+      h1 span:nth-child(6) {
+        color: rgb(184, 10, 178);
+      }
+      h1 span:nth-child(7) {
+        color: rgb(127, 161, 121);
+      }
+      h1 span:nth-child(8) {
+        color: rgb(43, 175, 127);
+      }
+      h1 span:nth-chibld(9) {
+        color: rgb(10, 10, 184);
+      }
+      h1 span:nth-child(10) {
+        color: rgb(120, 203, 224);
+      }
+      h1 span:nth-child(11) {
+        color: rgb(221, 122, 9);
+      }
+
+      @keyframes rotateInPlace {
+        from {
+          transform: rotateY(180deg);
+          border: 3px solid;
+          /* border-radius: 10%; */
+        }
+        to {
+          transform: rotateY(0) scale(1) skewY(5deg);
+          border-style: double;
+          border: 3px solid;
+          border-radius: 10%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span>B</span>
+      <span>O</span>
+      <span>N</span>
+      <span>J</span>
+      <span>O</span>
+      <span>U</span>
+      <span>R</span>
+      <span>-</span>
+      <span>!</span>
+      <!-- <span></span> -->
+      <!-- <span></span> -->
+    </h1>
+  </body>
+</html>
